@@ -1,23 +1,52 @@
 @import "./css/_reset.scss";
 
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
 .calculator{
     width: 352px;
     background: $black;
+ 
 
     &__display{
     width: 100%;    
     }
 
     &__display-input{
+        width: 100%;
         background: transparent;
         outline: transparent;
         border: 0;
         color: $white;
+        font-size: calculator-rem(48);
+        margin-bottom: 88px;   
+        text-align: right;
     }
 
     &__display-result{
         color: $light-grey;
+        font-size: calculator-rem(48);
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: flex-end;
     } 
+
+    &__display-callback{
+        margin-bottom: 20px;
+    }
+
+    &__display-callback::after{
+        content: '';
+        display: block;
+        background: $background;
+        width: 352px;
+        height: 1px;
+        margin: 20px 0px 25px 0px
+    }
 
     &__buttons{        
         &--button{
@@ -29,7 +58,7 @@
             font-size: calculator-rem(36);
             border: 0;
 
-            &:not(:first-child):not(:last-child):hover{
+            &:hover{
                 background: lighten($grey, 30%);
             }
         }
