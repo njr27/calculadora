@@ -61,7 +61,7 @@ table {
   font-family: "Inter", sans-serif;
 }
 
-body {
+.container-phone {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -135,6 +135,7 @@ body {
 
 .calculator__buttons--button-background-red {
   background: #FF5959;
+  color: #343434;
 }
 
 .calculator__buttons--button-background-red:hover {
@@ -143,6 +144,7 @@ body {
 
 .calculator__buttons--button-color-green {
   color: #52DF68;
+  font-size: 1.5rem;
 }
 
 .calculator__buttons--button-color-grey {

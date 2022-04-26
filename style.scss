@@ -1,10 +1,13 @@
 @import "./css/_reset.scss";
 
-body{
+
+
+.container-phone{
     display: flex;
     justify-content: center;
     height: 100vh;
     align-items: center;
+   
 }
 
 .calculator{
@@ -65,6 +68,7 @@ body{
 
         &--button-background-red{
             background: $red;
+            color: $grey;
 
             &:hover{
                 background: lighten($red, 10%);
@@ -73,6 +77,7 @@ body{
 
         &--button-color-green{
             color: $green;
+            font-size: calculator-rem(24);
         }
 
         &--button-color-grey{
