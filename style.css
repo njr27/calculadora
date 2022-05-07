@@ -110,6 +110,10 @@ table {
   margin-bottom: 20px;
 }
 
+.calculator__display-callback--img {
+  cursor: pointer;
+}
+
 .calculator__display-callback::after {
   content: '';
   display: block;
